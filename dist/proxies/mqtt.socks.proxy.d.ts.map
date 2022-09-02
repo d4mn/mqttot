@@ -1,0 +1,1 @@
+{"version":3,"file":"mqtt.socks.proxy.d.ts","sourceRoot":"","sources":["../../src/proxies/mqtt.socks.proxy.ts"],"names":[],"mappings":";AAAA,OAAO,EAAe,kBAAkB,EAAE,MAAM,OAAO,CAAC;AACxD,OAAO,EAAE,SAAS,EAAE,MAAM,cAAc,CAAC;AAEzC,qBAAa,cAAe,YAAW,SAAS;IAClC,OAAO,CAAC,OAAO;gBAAP,OAAO,EAAE,IAAI,CAAC,kBAAkB,EAAE,SAAS,CAAC;IAC1D,OAAO;CAOd"}

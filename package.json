@@ -1,0 +1,53 @@
+{
+  "name": "@igpapi/mqttot",
+  "version": "3.71.1",
+  "description": "> TODO: description",
+  "author": "bowzee <dilame.nickolson@gmail.com>",
+  "homepage": "https://github.com/dilame/instagram-private-api/tree/master/packages/mqtt#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "src": "src"
+  },
+  "files": [
+    "dist",
+    "src/**/*[!.spec].ts"
+  ],
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dilame/igpapi.git"
+  },
+  "scripts": {
+    "build": "yarn clean && yarn compile",
+    "clean": "rimraf ./dist",
+    "compile": "tsc -p tsconfig.json"
+  },
+  "bugs": {
+    "url": "https://github.com/dilame/igpapi/issues"
+  },
+  "dependencies": {
+    "@types/debug": "^4.1.5",
+    "debug": "^4.1.1",
+    "lodash": "^4.17.21",
+    "mqtts": "1.5.0",
+    "socks": "^2.6.0",
+    "ts-custom-error": "^3.2.0",
+    "url-parse": "^1.5.10",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.32",
+    "@types/debug": "^4.1.5",
+    "@types/duplexify": "^3.6.0",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "12.12.29",
+    "@types/url-parse": "^1.4.8",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.2"
+  },
+  "gitHead": "7d416a4e856f8e202bb9d477fd1a7ba1368fc9ca"
+}

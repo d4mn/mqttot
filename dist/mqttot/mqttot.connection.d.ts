@@ -1,0 +1,60 @@
+/// <reference types="node" />
+/// <reference types="node" />
+import { Int64, ThriftPacketDescriptor } from '../thrift';
+export declare type MQTToTConnectionData = Partial<{
+    clientIdentifier: string;
+    willTopic: string;
+    willMessage: string;
+    clientInfo: MQTToTConnectionClientInfo;
+    password: string;
+    unknown: number;
+    appSpecificInfo: MQTToTConnectionAppSpecificInfo;
+}>;
+export declare type MQTToTConnectionAppSpecificInfo = Partial<{
+    app_version: string;
+    capabilities: string;
+    everclear_subscriptions: string;
+    'User-Agent': string;
+    'Accept-Language': string;
+    platform: string;
+    ig_mqtt_route: string;
+    pubsub_msg_type_blacklist: string;
+    auth_cache_enabled: string;
+    msys_typing_status_enabled: string;
+}>;
+export declare type MQTToTConnectionClientInfo = Partial<{
+    userId: Int64;
+    userAgent: string;
+    clientCapabilities: Int64;
+    endpointCapabilities: Int64;
+    publishFormat: number;
+    noAutomaticForeground: boolean;
+    makeUserAvailableInForeground: boolean;
+    deviceId: string;
+    isInitiallyForeground: boolean;
+    networkType: number;
+    networkSubtype: number;
+    clientMqttSessionId: Int64;
+    clientIpAddress: string;
+    subscribeTopics: number[];
+    clientType: string;
+    appId: Int64;
+    overrideNectarLogging: boolean;
+    connectTokenHash: string;
+    regionPreference: string;
+    deviceSecret: string;
+    clientStack: number;
+    fbnsConnectionKey: number;
+    fbnsConnectionSecret: string;
+    fbnsDeviceId: string;
+    fbnsDeviceSecret: string;
+    fbUserId: Int64;
+}>;
+export declare class MQTToTConnection {
+    fbnsConnectionData: MQTToTConnectionData;
+    static thriftConfig: ThriftPacketDescriptor[];
+    constructor(connectionData: MQTToTConnectionData);
+    toThrift(): Buffer;
+    toString(): string;
+}
+//# sourceMappingURL=mqttot.connection.d.ts.map
