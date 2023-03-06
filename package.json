@@ -33,8 +33,8 @@
     "@types/debug": "^4.1.5",
     "debug": "^4.1.1",
     "lodash": "^4.17.21",
-    "mqtts": "1.5.0",
-    "socks": "^2.6.0",
+    "mqtts": "github:d4mn/mqtts",
+    "socks": "^2.7.1",
     "ts-custom-error": "^3.2.0",
     "url-parse": "^1.5.10",
     "zlib": "^1.0.5"
