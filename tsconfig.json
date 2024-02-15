@@ -19,7 +19,7 @@
     "target": "ES2019",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./",
+    "baseUrl": "./src/",
     "allowJs": false,
     "resolveJsonModule": true,
     "strict": true,
