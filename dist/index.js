@@ -18,4 +18,5 @@ __exportStar(require("./mqttot"), exports);
 __exportStar(require("./thrift"), exports);
 __exportStar(require("./utilities"), exports);
 __exportStar(require("./errors"), exports);
+__exportStar(require("./transports"), exports);
 //# sourceMappingURL=index.js.map
